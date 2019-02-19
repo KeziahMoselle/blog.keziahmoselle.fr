@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Article from '../components/Article'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,26 +15,22 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
+          title="Index"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <Article
+              title={title}
+              subtitle={node.excerpt}
+              date={node.frontmatter.date}
+              slug={node.fields.slug}
+              timeToRead={node.timeToRead}
+              key={node.fields.slug}
+            />
           )
         })}
       </Layout>
@@ -55,11 +51,12 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          timeToRead
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD/MM/YYYY")
             title
           }
         }
