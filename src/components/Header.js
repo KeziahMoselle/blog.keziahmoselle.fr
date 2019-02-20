@@ -5,8 +5,6 @@ import Hero from './Hero'
 
 import logo from './logo.svg'
 import githubLogo from './github.svg'
-import './index.css'
-
 
 function Header ({ isHomepage }) {
   return (

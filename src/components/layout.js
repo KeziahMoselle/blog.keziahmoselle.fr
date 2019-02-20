@@ -3,9 +3,6 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 
-import './index.css'
-import './markdown.css'
-
 function Layout ({ location, children }) {
   const rootPath = `${__PATH_PREFIX__}/`
   let header

@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
 import Article from '../components/Article'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 
 class BlogIndex extends React.Component {
   render() {

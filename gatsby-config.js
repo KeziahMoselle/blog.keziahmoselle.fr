@@ -5,7 +5,7 @@ module.exports = {
     description: `A place to share my thoughts.`,
     siteUrl: `https://blog.keziahmoselle.fr/`,
     social: {
-      twitter: `KeziahMoselle`,
+      twitter: `@KeziahMoselle`,
     },
   },
   plugins: [
@@ -57,7 +57,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `content/assets/icon.png`,
+        icon: `content/assets/nemesis-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

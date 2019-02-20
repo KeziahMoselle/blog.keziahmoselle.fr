@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 
 function BlogPostTemplate (props) {
   const post = props.data.markdownRemark
@@ -16,7 +16,7 @@ function BlogPostTemplate (props) {
         <div className="space-between" style={{ marginBottom: '24px' }}>
           <Link to="/"><button>Go back</button></Link>
           <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <span>{ post.timeToRead } min</span>
+            <span>~ { post.timeToRead } min</span>
             <span>{ post.frontmatter.date }</span>
           </p>
         </div>
