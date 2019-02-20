@@ -19,20 +19,24 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
 
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+        <h3>Derniers articles</h3>
 
-          return (
-            <Article
-              title={title}
-              subtitle={node.excerpt}
-              date={node.frontmatter.date}
-              slug={node.fields.slug}
-              timeToRead={node.timeToRead}
-              key={node.fields.slug}
-            />
-          )
-        })}
+        <div className="block">
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+
+            return (
+              <Article
+                title={title}
+                subtitle={node.excerpt}
+                date={node.frontmatter.date}
+                slug={node.fields.slug}
+                timeToRead={node.timeToRead}
+                key={node.fields.slug}
+              />
+            )
+          })}
+        </div>
       </Layout>
     )
   }

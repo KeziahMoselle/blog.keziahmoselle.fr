@@ -21,8 +21,7 @@ function Layout ({ location, children }) {
       {header}
 
       <main className="container medium">
-        <h3>Derniers articles</h3>
-        <div className="block">{children}</div>
+        {children}
       </main>
 
       <Footer />
