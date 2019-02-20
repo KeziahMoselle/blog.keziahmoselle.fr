@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -17,15 +17,16 @@ function Layout ({ location, children }) {
   }
 
   return (
-    <Fragment>
+    <div id="root">
       {header}
 
-      <main className="container small">
-        {children}
+      <main className="container medium">
+        <h3>Derniers articles</h3>
+        <div className="block">{children}</div>
       </main>
 
       <Footer />
-    </Fragment>
+    </div>
   )
 }
 
