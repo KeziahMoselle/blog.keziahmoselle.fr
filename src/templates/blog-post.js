@@ -12,7 +12,7 @@ function BlogPostTemplate (props) {
     <Layout location={props.location}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
 
-      <div className="markdown-body">
+      <div className="markdown-body" style={{ marginTop: '64px' }}>
         <h1>{post.frontmatter.title}</h1>
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
