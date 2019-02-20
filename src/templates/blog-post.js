@@ -12,26 +12,36 @@ function BlogPostTemplate (props) {
     <Layout location={props.location}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
 
-      <div className="markdown-body" style={{ marginTop: '64px' }}>
-        <h1>{post.frontmatter.title}</h1>
-
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        
-        <hr />
-
-        <div className="space-between">
-          {previous && (
-            <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
-          )}
-
-          {next && (
-            <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </Link>
-          )}
+      <div style={{ marginTop: '64px' }}>
+        <div className="space-between" style={{ marginBottom: '24px' }}>
+          <Link to="/"><button>Go back</button></Link>
+          <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <span>{ post.timeToRead } min</span>
+            <span>{ post.frontmatter.date }</span>
+          </p>
         </div>
+
+        <div className="markdown-body">
+          <h1>{post.frontmatter.title}</h1>
+
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          
+          <hr />
+
+          <div className="space-between">
+            { previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>)
+            }
+
+            { next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>)
+            }
+          </div>
+        </div>      
       </div>
     </Layout>
   )
