@@ -1,22 +1,31 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-class NotFoundPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+import image from './notFound.svg'
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </Layout>
-    )
-  }
+function NotFoundPage ({ data, location }) {
+  const siteTitle = data.site.siteMetadata.title
+  console.log(location)
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="404: Not Found" />
+      
+      <div>
+        <h2>Not Found</h2>
+        <img src={image} alt="Undraw.co 404 illustration" style={{
+          objectFit: 'contain',
+          width: '100%',
+          maxHeight: '300px',
+          margin: '64px 0'
+        }} />
+
+        <div className="center"><Link as="button" to="/"><button>Go home</button></Link></div>
+      </div>
+    </Layout>
+  )
 }
 
 export default NotFoundPage
