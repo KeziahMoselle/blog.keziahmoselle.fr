@@ -561,7 +561,6 @@ header img {
 footer {
   width: 100%;
   background-color: black;
-  color: white;
   padding: 16px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -569,8 +568,34 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 32px auto;
+}
+
+footer p {
+  text-align: center;
+  max-width: 600px;
+  margin: 32px 0;
+}
+
+footer ul {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer a, footer p {
+  font-size: 24px;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
