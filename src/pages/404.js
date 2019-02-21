@@ -13,7 +13,7 @@ function NotFoundPage ({ data, location }) {
       
       <div>
         <h2>Not Found</h2>
-        <img src="./assets/not-found.svg" alt="Undraw.co 404 illustration" style={{
+        <img src="/assets/not-found.svg" alt="Undraw.co 404 illustration" style={{
           objectFit: 'contain',
           width: '100%',
           maxHeight: '300px',

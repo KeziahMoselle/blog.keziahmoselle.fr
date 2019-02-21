@@ -8,7 +8,7 @@ function Header ({ isHomepage }) {
     <Fragment>
       <header>
         <Link to="/">
-          <img src="./assets/logo.svg" className="header-logo" alt="Keziah logo" />
+          <img src="/assets/logo.svg" className="header-logo" alt="Keziah logo" />
         </Link>
         
         <ul className="header-menu">
@@ -19,7 +19,7 @@ function Header ({ isHomepage }) {
           </li>
           <li>
             <a href="https://github.com/KeziahMoselle">
-              <img src="./assets/github.svg" alt="GitHub logo" />
+              <img src="/assets/github.svg" alt="GitHub logo" />
             </a>
           </li>
         </ul>
