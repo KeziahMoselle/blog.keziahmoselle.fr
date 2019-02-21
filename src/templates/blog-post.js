@@ -28,18 +28,22 @@ function BlogPostTemplate (props) {
           
           <hr />
 
-          <div className="space-between">
-            { previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>)
-            }
+          <div className="article-end">
+            <p>
+              { previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>)
+              }
 
-            { next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>)
-            }
+              { next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>)
+              }
+            </p>
+
+            <Link to="/"><button>Go back</button></Link>
           </div>
         </div>      
       </div>
