@@ -13,7 +13,7 @@ function BlogPostTemplate (props) {
       <SEO title={post.frontmatter.title} description={post.excerpt} />
 
       <div style={{ marginTop: '64px' }}>
-        <div className="space-between" style={{ marginBottom: '24px' }}>
+        <div className="space-between" style={{ marginBottom: '48px' }}>
           <Link to="/"><button>Go back</button></Link>
           <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             <span>~ { post.timeToRead } min</span>
@@ -63,7 +63,6 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       timeToRead
       frontmatter {
