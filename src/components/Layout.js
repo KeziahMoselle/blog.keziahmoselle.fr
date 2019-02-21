@@ -3,7 +3,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 
-function Layout ({ location, children }) {
+function Layout ({ location, children, classToApply }) {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
@@ -17,7 +17,7 @@ function Layout ({ location, children }) {
     <div id="root">
       {header}
 
-      <main className="container medium">
+      <main className={`container medium ${classToApply}`}>
         {children}
       </main>
 

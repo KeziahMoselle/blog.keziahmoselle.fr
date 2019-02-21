@@ -3,15 +3,12 @@ import { Link } from 'gatsby'
 
 import Hero from './Hero'
 
-import logo from './logo.svg'
-import githubLogo from './github.svg'
-
 function Header ({ isHomepage }) {
   return (
     <Fragment>
       <header>
         <Link to="/">
-          <img src={logo} className="header-logo" alt="Keziah logo" />
+          <img src="./assets/logo.svg" className="header-logo" alt="Keziah logo" />
         </Link>
         
         <ul className="header-menu">
@@ -22,7 +19,7 @@ function Header ({ isHomepage }) {
           </li>
           <li>
             <a href="https://github.com/KeziahMoselle">
-              <img src={githubLogo} alt="GitHub logo" />
+              <img src="./assets/github.svg" alt="GitHub logo" />
             </a>
           </li>
         </ul>

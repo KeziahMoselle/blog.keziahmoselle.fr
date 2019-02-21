@@ -312,6 +312,7 @@ header ul {
 }
 
 .valign {
+  display: flex;
   align-items: center;
 }
 
@@ -568,27 +569,38 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   margin: 32px auto;
 }
 
-footer p {
-  text-align: center;
-  max-width: 600px;
-  margin: 32px 0;
-}
-
-footer ul {
-  max-width: 600px;
+footer .container > div {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-footer ul li:not(:last-child) {
-  margin-bottom: 10px;
+footer .container > div a {
+  height: 36px;
+  margin: 0 16px;
+  transition: transform 0.3s;
+}
+
+footer .container > div a:hover {
+  transform: translateY(-2px);
+}
+
+footer div a img {
+  height: 100%; 
+}
+
+footer p {
+  margin: 46px 0 0 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer a, footer p {

@@ -4,18 +4,16 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 
-import image from './notFound.svg'
-
 function NotFoundPage ({ data, location }) {
   const siteTitle = data.site.siteMetadata.title
   console.log(location)
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
+    <Layout location={location} title={siteTitle} classToApply="valign">
+      <SEO title="Not Found" />
       
       <div>
         <h2>Not Found</h2>
-        <img src={image} alt="Undraw.co 404 illustration" style={{
+        <img src="./assets/not-found.svg" alt="Undraw.co 404 illustration" style={{
           objectFit: 'contain',
           width: '100%',
           maxHeight: '300px',
