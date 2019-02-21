@@ -611,6 +611,10 @@ footer div a img {
 }
 
 footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 46px 0 0 0;
 }
 

@@ -18,7 +18,7 @@ function Footer () {
           </a>
         </div>
       
-        <p style={{ display: 'flex', alignItems: 'center' }}>
+        <p>
           Built with
           <a href="https://gatsbyjs.org/"><img src="/assets/gatsby.svg" alt="Gatsby.js" style={{ height: '26px', margin: '0 8px' }} /></a>
           and hosted on
