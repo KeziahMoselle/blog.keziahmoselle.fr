@@ -16,8 +16,8 @@ function BlogPostTemplate (props) {
       <div style={{ marginTop: '64px' }}>
         <div className="space-between" style={{ marginBottom: '48px' }}>
           <Link to="/"><button>Go back</button></Link>
-          <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <span>~ { post.timeToRead } min</span>
+          <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexDirection: 'column' }}>
+            <span>Temps de lecture : ~{ post.timeToRead } min</span>
             <span>{ post.frontmatter.date }</span>
           </p>
         </div>
@@ -48,7 +48,7 @@ function BlogPostTemplate (props) {
 
             <Link to="/"><button>Go back</button></Link>
 
-            <a href={editFileUrl} style={{ marginTop: '16px' }}>Edit on GitHub</a>
+            <a href={editFileUrl} style={{ marginTop: '32px' }}>Edit on GitHub</a>
           </div>
         </div>      
       </div>

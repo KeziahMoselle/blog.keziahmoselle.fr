@@ -14,7 +14,7 @@ function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRe
         <div>
           <Link to={slug}><h3>{ title }</h3></Link>
           <h4 className="grey">{ subtitle }</h4>
-          <p>~ { timeToRead } min | { date }</p>
+          <p>Temps de lecture : ~{ timeToRead } min | { date }</p>
           <div>{ listTopics }</div>
         </div>
         
