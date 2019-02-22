@@ -5726,10 +5726,10 @@ homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
-horizon-prismjs-theme@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/horizon-prismjs-theme/-/horizon-prismjs-theme-1.0.2.tgz#36fc8883542163a92f5d341302a471179684c805"
-  integrity sha512-FcA6537S9AnyoQetx2jkIxAQvAVjfMq8EQspeKd0cD/cD4oPDqiW5666I8+AJb7pyvnongP2n5a2gB8wNcG1yw==
+horizon-prismjs-theme@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/horizon-prismjs-theme/-/horizon-prismjs-theme-1.0.4.tgz#0cfdfdfa2b6afb9645b012fddcd5f00d613e2f81"
+  integrity sha512-4hyU+Ekc9OxXearjpJ7XBBoEVqjo6ltxl0WE1wzfe68zPfiWPKu5lI/XwCysXG5Qra0vHZ/xrIRfxMX9hIUmYw==
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.6.0:
   version "2.7.1"
