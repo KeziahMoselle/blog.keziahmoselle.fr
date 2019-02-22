@@ -3,14 +3,14 @@ title: Héberger des sites statiques avec Netlify
 date: "2019-02-22T23:54:40.245Z"
 ---
 
-Vous avez réalisé un site statique et vous voulez l'héberger ? Pas de problème Netlify est un service qui vous permet d'héberger des sites statiques gratuitement en vous proposant d'autres fonctionnalités tel que l'envoi de formulaire par exemple.
+Netlify est un service qui vous permet d'héberger des sites statiques gratuitement en vous proposant d'autres fonctionnalités. ([Functions](https://www.netlify.com/features/functions/), [Identity](https://www.netlify.com/docs/identity/), [Forms](https://www.netlify.com/docs/form-handling/))
 
 
 ## Héberger un site statique
 
 Très bien, vous avez réalisé un site et vous souhaitez l'héberger voici les étapes :
 
-1. S'inscrire sur https://app.netlify.com/signup
+1. S'inscrire sur [https://app.netlify.com/signup](https://app.netlify.com/signup)
    
 2. Pour héberger notre site nous avons deux possibilités : Nous pouvons le lier à Git ou déplacer un dossier Nous allons d'abord déplacer notre dossier pour voir ce qu'il se passe.
 
@@ -19,7 +19,7 @@ Très bien, vous avez réalisé un site et vous souhaitez l'héberger voici les 
 3. Nous sommes sur l'interface de gestion de notre site, c'est ici où nous pouvons modifier les paramètres de celui-ci.
 Votre site a été publié à une addresse avec un nom généré aléatoirement. Vous pouvez cliquer sur l'URL pour y accéder !
 
-4. Et voilà vous avez publié votre site ! Mais.. nous n'allons pas rester avec un nom tel que "cranky-curie-3551f8" !
+4. Et voilà vous avez publié votre site ! Mais.. nous n'allons pas rester avec un nom tel que "cranky-curie-3551f8" ! Modifions le :
    
 ![change-name](./images/change-name.png)
    
@@ -66,11 +66,11 @@ Et bien il en existe une autre qui se lie à votre dépôt Git en ligne (Netlify
 ![new-from-git](./images/new-from-git.png)
 
 
-2. Choisissez entre [GitHub](https://github.com/), [GitLab](https://gitlab.com/) et [Bitbucket](https://bitbucket.org/)
+1. Connectez-vous sur [GitHub](https://github.com/), [GitLab](https://gitlab.com/) ou [Bitbucket](https://bitbucket.org/)
 
-3. Choisissez votre dépôt
+2. Choisissez votre dépôt
 
-4. La partie **Basic build settings** est **optionnel** pour un site HTML/CSS classique
+3. La partie **Basic build settings** est **optionnel** pour un site HTML/CSS classique
 
 ![deploy-from-git](./images/deploy-from-git.png)
 
