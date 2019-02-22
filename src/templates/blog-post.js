@@ -6,7 +6,8 @@ import SEO from '../components/Seo'
 
 function BlogPostTemplate (props) {
   const post = props.data.markdownRemark
-  const { previous, next } = props.pageContext
+  const { previous, next, slug } = props.pageContext
+  const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
 
   return (
     <Layout location={props.location}>
@@ -44,6 +45,8 @@ function BlogPostTemplate (props) {
             </p>
 
             <Link to="/"><button>Go back</button></Link>
+
+            <a href={editFileUrl} style={{ marginTop: '16px' }}>Edit on GitHub</a>
           </div>
         </div>      
       </div>
