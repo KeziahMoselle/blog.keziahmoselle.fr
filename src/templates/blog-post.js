@@ -25,6 +25,8 @@ function BlogPostTemplate (props) {
         <div className="markdown-body">
           <h1>{post.frontmatter.title}</h1>
 
+          <div className="table-of-contents" dangerouslySetInnerHTML={{ __html: post.tableOfContents }}></div>
+
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           
           <hr />
@@ -69,6 +71,7 @@ export const pageQuery = graphql`
       html
       excerpt
       timeToRead
+      tableOfContents
       frontmatter {
         title
         date(formatString: "DD/MM/YYYY")

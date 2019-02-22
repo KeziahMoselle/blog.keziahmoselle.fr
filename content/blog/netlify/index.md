@@ -5,12 +5,6 @@ date: "2019-02-22T23:54:40.245Z"
 
 Vous avez réalisé un site statique et vous voulez l'héberger ? Pas de problème Netlify est un service qui vous permet d'héberger des sites statiques gratuitement en vous proposant d'autres fonctionnalités tel que l'envoi de formulaire par exemple.
 
-#### Dans ce step by step nous allons apprendre à : 
-
-* Héberger un site statique (HTML/CSS/JS)
-* Recevoir les données de votre formulaire
-* Utiliser Netlify en liant un compte GitHub
-
 
 ## Héberger un site statique
 
