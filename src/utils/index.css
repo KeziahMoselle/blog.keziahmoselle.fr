@@ -54,8 +54,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  font-size: 17px;
-  scroll-behavior: smooth;
+  font-size: 17px
 }
 
 #___gatsby, #___gatsby > div{

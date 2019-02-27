@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -8,6 +8,10 @@ function BlogPostTemplate (props) {
   const post = props.data.markdownRemark
   const { previous, next, slug } = props.pageContext
   const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
+
+  useEffect(() => {
+    document.querySelector('header').scrollIntoView()
+  }, [props])
 
   return (
     <Layout location={props.location}>
