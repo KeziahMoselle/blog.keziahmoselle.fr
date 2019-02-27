@@ -413,14 +413,15 @@ header ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
-  height: 120px;
+  min-height: 120px;
+  height: auto;
 }
 
 .article-end p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0 !important;
+  margin: 0 0 24px 0;
 }
 
 

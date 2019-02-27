@@ -47,8 +47,7 @@ function BlogPostTemplate (props) {
             </p>
 
             <Link to="/"><button>Go back</button></Link>
-
-            <a href={editFileUrl} style={{ marginTop: '32px' }}>Edit on GitHub</a>
+            <a href={editFileUrl} style={{ margin: '24px 0' }}>Edit on GitHub</a>
           </div>
         </div>      
       </div>
