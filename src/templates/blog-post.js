@@ -11,7 +11,7 @@ function BlogPostTemplate (props) {
 
   useEffect(() => {
     document.querySelector('header').scrollIntoView()
-  }, [props])
+  }, [props.pageContext])
 
   return (
     <Layout location={props.location}>
