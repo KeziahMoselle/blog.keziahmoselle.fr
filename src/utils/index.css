@@ -344,6 +344,12 @@ header ul {
    margin: 0 !important;
  }
 
+ .table-of-contents {
+   padding-bottom: 0.3em;
+   margin-bottom: 32px;
+   border-bottom: 1px solid rgb(234, 236, 239);
+ }
+
  .articles .block {
   flex-direction: column;
 }

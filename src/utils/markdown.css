@@ -358,6 +358,10 @@
   margin-top: 0;
 }
 
+.markdown-body li > p {
+  margin-bottom: 4px;
+}
+
 .markdown-body blockquote {
   margin: 0;
 }

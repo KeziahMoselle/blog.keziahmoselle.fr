@@ -21,7 +21,7 @@ function BlogPostTemplate (props) {
         <div className="space-between" style={{ marginBottom: '48px' }}>
           <Link to="/"><button>Go back</button></Link>
           <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexDirection: 'column' }}>
-            <span>Temps de lecture : ~{ post.timeToRead } min</span>
+            <span style={{ marginBottom: '6px' }}>Temps de lecture : ~{ post.timeToRead } min</span>
             <span>{ post.frontmatter.date }</span>
           </p>
         </div>
