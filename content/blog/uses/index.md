@@ -59,7 +59,7 @@ I use [Hyper](https://hyper.is/) (Bash + zsh)
 
 ## Tools & Misc
 
-These are the mains tools I use, there is more here : [Ressources](/mes-ressources)
+These are the tools I use frequently.
 
 - [Netlify](https://www.netlify.com/) - Host this blog, my website and hobbies projects
 - [Cloudflare](https://www.cloudflare.com/) - For my DNS needs
@@ -95,3 +95,7 @@ These are the mains tools I use, there is more here : [Ressources](/mes-ressourc
 - Seat : DXRacer Formula F08 - White
 - NAS : Synology NAS DS218 (RAID1)
 - My backpack : XD Design Bobby XL 17", black
+
+## My desk
+
+![My Desk](./images/desk.jpg)
