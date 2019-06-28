@@ -9,29 +9,29 @@ function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRe
   }
   
   return (
-    <div className="article">
-      <div className="article-header">
-        <div>
-          <Link to={slug}><h3>{ title }</h3></Link>
-          <h4 className="grey">{ subtitle }</h4>
-          <p>Temps de lecture : ~{ timeToRead } min | { date }</p>
-          <div>{ listTopics }</div>
-        </div>
-        
-        { thumbnail &&
-          <Link to={slug}>
+    <Link to={slug}>
+      <div className="article card">
+        <div className="article-header">
+          <div>
+            <h3>{ title }</h3>
+            <h4 className="grey">{ subtitle }</h4>
+            <p>Temps de lecture : ~{ timeToRead } min | { date }</p>
+            <div>{ listTopics }</div>
+          </div>
+          
+          { thumbnail &&
             <img
               src={`./assets/thumbnails/${thumbnail}.jpg`}
               alt={`${title} thumbnail`}
             />
-          </Link>
-        }
+          }
+        </div>
+        
+        <div className="article-footer">
+          <a href="#" className="pill"><span>Lire l'article</span></a>
+        </div>
       </div>
-      
-      <div className="article-footer">
-        <Link to={slug} className="pill"><span>Lire l'article</span></Link>
-      </div>
-    </div>
+    </Link>
   )
 }
 

@@ -295,6 +295,21 @@ header ul {
 }
 
 
+/* CARDS */
+
+.card {
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.12);
+  transition: box-shadow .1s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 6px rgba(0,0,0,.12);
+}
+
+
 /**
  *
  * UTILITIES
@@ -359,6 +374,7 @@ header ul {
 }
 
 .article {
+  cursor: pointer;
   width: 100%;
   margin-bottom: 64px;
   display: flex;
