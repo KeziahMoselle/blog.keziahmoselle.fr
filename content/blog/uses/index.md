@@ -39,7 +39,7 @@ These are the main extensions I use : ([All my extensions](https://gist.github.c
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - Preview Markdown files in a tab and more
 - [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) - Metrics and insights about my programming activity
 - [colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize) - Colorize colors
-- [Syncing](https://marketplace.visualstudio.com/items?itemName=nonoroazoro.syncing) - Sync all my extensions and settings in a [Github Gist](https://gist.github.com/KeziahMoselle/68b4ed2ccbfea5bd15fd8506386841dc)
+- [Syncing](https://marketplace.visualstudio.com/items?itemName=nonoroazoro.syncing) - Sync all my extensions and settings in a [GitHub Gist](https://gist.github.com/KeziahMoselle/68b4ed2ccbfea5bd15fd8506386841dc)
 
 ## Terminal
 
@@ -86,7 +86,7 @@ These are the tools I use frequently.
   - Power Supply : Seasonic PRIME Ultra 750 Titanium
   - Case : NZXT H700i - White
 - Peripherals
-  - Main monitor : Asus ROG Swift PG279Q 27" 2560*1440
+  - Main monitor : Asus ROG Swift PG279Q 27" 2560*1440 144Hz
   - Monitors : Iiyama G-MASTER GB2530HSU-B1 24" 1920*1080
   - Keyboard : Cooler Master MasterKeys MK750 - Cherry MX Red
   - Mouse : ROCCAT Kova - Black
