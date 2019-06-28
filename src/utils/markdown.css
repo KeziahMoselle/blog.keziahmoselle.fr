@@ -614,6 +614,13 @@
   padding-left: 2em;
 }
 
+@media only screen and (max-width: 640px) {
+  .markdown-body ol,
+  .markdown-body ul {
+    padding-left: 1em;
+  }
+}
+
 .markdown-body ol ol,
 .markdown-body ol ul,
 .markdown-body ul ol,

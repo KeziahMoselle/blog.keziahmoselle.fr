@@ -18,9 +18,9 @@ function BlogPostTemplate (props) {
       <SEO title={post.frontmatter.title} description={post.excerpt} />
 
       <div style={{ marginTop: '64px' }}>
-        <div className="space-between" style={{ marginBottom: '48px' }}>
+        <div className="article-metadata space-between">
           <Link to="/"><button>Go back</button></Link>
-          <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexDirection: 'column' }}>
+          <p>
             <span style={{ marginBottom: '6px' }}>Temps de lecture : ~{ post.timeToRead } min</span>
             <span>{ post.frontmatter.date }</span>
           </p>

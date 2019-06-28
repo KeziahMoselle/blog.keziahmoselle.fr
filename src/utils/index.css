@@ -373,6 +373,15 @@ header ul {
   margin-bottom: 16px;
 }
 
+.article-metadata {
+  margin-bottom: 48px;
+}
+
+.article-metadata > p {
+  display: flex;
+  flex-direction: column;
+}
+
 .article img {
   height: 150px;
   background-color: #eee;
@@ -388,6 +397,15 @@ header ul {
 @media only screen and (max-width: 600px) {
   .article-header {
     display: block;
+  }
+
+  .article-metadata {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .article-metadata > p {
+    margin-top: 24px;
   }
 
   .article img {
