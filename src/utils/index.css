@@ -607,7 +607,7 @@ footer .container > div {
 }
 
 footer .container > div a {
-  height: 36px;
+  height: 30px;
   margin: 0 16px;
   transition: transform 0.3s;
 }
@@ -635,7 +635,7 @@ footer ul {
 }
 
 footer a, footer p {
-  font-size: 19px;
+  font-size: 17px;
   color: white;
 }
 
