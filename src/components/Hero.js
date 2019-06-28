@@ -10,6 +10,12 @@ function Hero () {
     from: { x: 200 },
     x: 0, color: 'black'
   })
+
+  const { angle } = useSpring({
+    from: { angle: 0 },
+    angle: 50
+    
+  })
   
   return (
     <animated.div style={{opacity}} className="container hero">
@@ -30,6 +36,9 @@ function Hero () {
           transform: x.interpolate(x => `translateX(${x}px)`)
         }} className="circle"></animated.div>
       </div>
+      <animated.div style={{
+        transform: angle.interpolate(angle => `skewX(-${angle}deg)`)
+      }} className="circle overlap"></animated.div>
     </animated.div>
   )
 }

@@ -28,7 +28,7 @@ function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRe
         </div>
         
         <div className="article-footer">
-          <a href="#" className="pill"><span>Lire l'article</span></a>
+          <p className="pill"><span>Lire l'article</span></p>
         </div>
       </div>
     </Link>
