@@ -98,4 +98,4 @@ These are the tools I use frequently.
 
 ## My desk
 
-![My Desk](./images/desk.jpg)
+![My Desk](https://i.imgur.com/JHk6yij.jpg)
