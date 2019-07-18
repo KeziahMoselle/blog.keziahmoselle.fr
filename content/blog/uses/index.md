@@ -63,6 +63,7 @@ These are the tools I use frequently.
 
 - [Netlify](https://www.netlify.com/) - Host this blog, my website and hobbies projects
 - [Cloudflare](https://www.cloudflare.com/) - For my DNS needs
+- [ProtonMail](https://protonmail.com/) - My email service of choice
 - [CodeSandbox](https://codesandbox.io/) - Online code editor when I need to prototype something quick
 - [Meta Tags](https://metatags.io/) - Preview and debug meta tags
 - [svgo](https://github.com/svg/svgo) - Optimize .svg files
