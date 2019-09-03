@@ -3,6 +3,8 @@ title: Introduction Visual Studio Code, Portable, Live Server et SFTP
 date: "2019-09-03T23:54:40.245Z"
 ---
 
+![cover](./cover.svg)
+
 # Installation de Visual Studio Code Portable
 
 > **Remarque** : Si vous n'êtes pas contraint d'utiliser la version portable préférez la version User ou System installer.

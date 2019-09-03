@@ -36,8 +36,11 @@ date: "2019-02-21T23:54:40.245Z"
   - [Carbon](https://carbon.now.sh/) - Beautiful source code
   - [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode) - Generate Carbon within VS Code
   - [Screely](https://www.screely.com/) - Beautiful screenshots
+  - [Undraw.co](https://undraw.co/illustrations) - Beautiful illustrations
   
 ## Autres
   - [Caniuse](https://caniuse.com/) - Compatibilités CSS/JS avec les navigateurs
   - [Picular](https://picular.co/) - Google but for colors
   - [Gitbook](https://www.gitbook.com/) - Documentation
+
+## [+ de ressources disponible sur Notion.so](https://www.notion.so/keziahmoselle/Ressources-Web-et-Design-326d265dc24d4e1e917c52f6a242791c)
