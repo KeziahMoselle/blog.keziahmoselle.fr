@@ -5,7 +5,7 @@ date: "2019-09-03T23:54:40.245Z"
 
 # Installation de Visual Studio Code Portable
 
-> Remarque : Si vous n'êtes pas contraint d'utiliser la version portable préférez la version User ou System installer.
+> **Remarque** : Si vous n'êtes pas contraint d'utiliser la version portable préférez la version User ou System installer.
 
 Il est possible d'installer la version portable officiel depuis : [https://code.visualstudio.com/download](https://code.visualstudio.com/Download)
 
@@ -40,7 +40,9 @@ Pour plus d'informations sur la version portable :
 
 # Comment utiliser Visual Studio Code ?
 
-## Après l'installation si nous ouvrons VSCode nous arrivons sur :
+## Présentation
+
+Après l'installation si nous ouvrons VSCode nous arrivons sur :
 
 ![](Untitled-b9e0237d-aa37-4c50-b017-4199e662c544.png)
 
@@ -51,7 +53,7 @@ Pour plus d'informations sur la version portable :
 - Différents onglets sont disposés à gauche :
     - Explorer : C'est votre dossier
 
-        ![](Untitled-bc309cae-f8cf-4371-af8a-93c426594344.png)
+    ![](Untitled-bc309cae-f8cf-4371-af8a-93c426594344.png)
 
     - Search : C'est comme un CTRL+F (Rechercher dans une page ...) ou CTRL + H sur Powerpoint !
 
@@ -81,7 +83,7 @@ et voilà, votre éditeur est en français
 
 ## Installation d'un thème de couleur et d'icônes
 
-Bon, c'est bien on a installé notre éditeur, mais il est possible que vous vouliez changer l'apparence de votre éditeur pour être plus à l'aise avec
+Bon, c'est bien on a installé notre éditeur, mais il est possible que vous souhaitez changer l'apparence de votre éditeur pour être plus à l'aise avec
 
 - Rendez vous sur l'onglet **Extensions**
 - Rechercher : @category:themes
@@ -90,17 +92,14 @@ Bon, c'est bien on a installé notre éditeur, mais il est possible que vous vou
 ![](Untitled-11abcb01-e67f-4ae7-bfa9-efc61906129e.png)
 
 - Cliquer sur Installer
+- VSCode va maintenant appliquer votre thème automatiquement
 
-![](Untitled-f589683d-0bec-4034-a0a6-9692af4f752c.png)
-
-- Et maintenant sur Recharger
-- Maintenant il va falloir l'activer
-
+- Si vous souhaitez changer de thème plus tard vous pouvez accéder au menu ici :
+  
 ![](Untitled-cffbf9cb-2cab-4d53-8661-cb88a39e91a2.png)
 
-- Sélectionner le thème que vous avez installé
 
-**Remarque** : Il existe des thèmes préinstallé, si l'un d'eux vous correspond il n'est pas nécessaire d'installer des thèmes supplémentaire
+> **Remarque** : Il existe des thèmes préinstallé, si l'un d'eux vous correspond il n'est pas nécessaire d'installer des thèmes supplémentaire
 
 ![](Untitled-f38395cc-71f9-4876-be66-e97fe02caea8.png)
 
@@ -108,17 +107,9 @@ Bon, c'est bien on a installé notre éditeur, mais il est possible que vous vou
 
 ![](Untitled-b543c7a6-195b-4932-bd22-99d30576659e.png)
 
-- Installer et recharger
+- Installer le comme un thème
 
-![](Untitled-b5372d1e-9f4b-43d8-8031-3319dc5a624b.png)
-
-- Sélectionner votre pack d'icônes :
-
-![](Untitled-1de06ac5-4af7-4adb-9191-af85a73c7359.png)
-
-Avant
-
-Après
+- Avant / Après
 
 ![](Untitled-970e507e-36f8-40d4-b7e2-4b3bbf2595bc.png)
 
@@ -126,7 +117,7 @@ Après
 
 ---
 
-## Observer les changements en temps réel (Live Server)
+## Observer les changements en temps réel avec un site statique (Live Server)
 
 - Aller sur l'onglet Extensions et télécharger Live Server
 
@@ -141,11 +132,11 @@ Après
 
 ![](Untitled-f8ebb3cf-8a37-49d3-9fd3-03872eeb23fc.png)
 
+> **Remarque** : Si vous souhaitez utiliser Live Server avec de la génération côté serveur : [https://github.com/ritwickdey/live-server-web-extension](https://github.com/ritwickdey/live-server-web-extension)
+
 ---
 
-## Vous avez la flemme d'enregistrer à chaque changement ?
-
-# Les paramètres
+## Enregistrement automatique des fichiers après modification
 
 - Les paramètres se situe ici :
 
@@ -166,7 +157,8 @@ Après
 
 ![](Untitled-1e2d7f4f-0a75-4fe5-88ea-6c86e9bccc26.png)
 
-Remarque:  Plus vous baissez les ms, plus votre éditeur risque d'être lent (Surtout en version portable !)
+> **Remarque**:  Plus vous baissez les ms, plus votre éditeur risque d'être lent (Surtout en version portable !)
+> Vous pouvez également choisir onFocusChange ou onWindowChange si un délai ne vous correspond pas.
 
 ---
 
@@ -178,13 +170,13 @@ Il suffit de changer la taille (en pixels donc)
 
 ![](Untitled-ccf61d85-d29e-4e09-8867-8712c3b2ea6a.png)
 
-**Remarque** : Il est possible d'agrandir la police d'écriture directement depuis l'éditeur, ouvrer un fichier de votre choix, puis appuyer sur CTRL et + (du pavé numérique) ou CTRL et - (du pavé numérique)
+> **Remarque** : Il est possible d'agrandir la police d'écriture directement depuis l'éditeur, ouvrer un fichier de votre choix, puis appuyer sur CTRL et + (du pavé numérique) ou CTRL et - (du pavé numérique)
 
 ---
 
-## Comment utiliser une extension de FTP/SFTP ? (SFTP)
+## Comment utiliser une extension de FTP/SFTP ?
 
-DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
+**DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :**
 
 - Installer une extension FTP/SFTP : (En loccurence ici SFTP, mais le principe est le même)
 
@@ -196,13 +188,15 @@ DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
 
 - Il va créer un dossier caché : .vscode et créer un fichier sftp.json
 
-    {
-        "protocol": "sftp",
-        "host": "localhost",
-        "port": 22,
-        "username": "username",
-        "remotePath": "/"
-    }
+```json
+{
+    "protocol": "sftp",
+    "host": "localhost",
+    "port": 22,
+    "username": "username",
+    "remotePath": "/"
+}
+```
 
 - Il nous demande plusieurs champs à remplir :
     - protocol : c'est le protocole donc SFTP, FTP... (Utiliser SFTP de préférence car sécurisé)
@@ -212,16 +206,19 @@ DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
     - remotePath : ça sera l'endroit par défaut où vous allez être après la connexion
 - Dans le cadre de l'IUT (Et notamment se connecter au serveur TP) il faudra remplir de cette manière :
 
-    {
-        "protocol": "sftp",
-        "host": "tp.iha.unistra.fr",
-        "port": 22,
-        "username": "TonNomDeFamille",
-        "remotePath": "/iut/users/nomDeFamille/public_html/"
-    }
+```json
+{
+    "protocol": "sftp",
+    "host": "tp.iha.unistra.fr",
+    "port": 22,
+    "username": "TonNomDeFamille",
+    "remotePath": "/iut/users/nomDeFamille/public_html/"
+}
+```
 
 - Petit problème, il va nous demander notre mot de passe à chaque fois ! Nous devons donc rajouter notre mot de passe :
 
+```json
     {
         "protocol": "sftp",
         "host": "tp.iha.unistra.fr",
@@ -230,9 +227,11 @@ DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
         "password": "votreSuperMotDePasse",
         "remotePath": "/iut/users/nomDeFamille/public_html/"
     }
+```
 
 - Mais, nous ne voulons pas mettre notre mot de passe sur le serveur TP ! Nous allons demander à l'extension d'ignorer certains fichiers ou dossiers :
 
+```json
     {
         "protocol": "sftp",
         "host": "tp.iha.unistra.fr",
@@ -244,9 +243,11 @@ DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
             ".vscode"
         ]
     }
+```
 
 - Version MacOS :
 
+```json
     {
         "protocol": "sftp",
         "host": "tp.iha.unistra.fr",
@@ -256,14 +257,16 @@ DESACTIVER L'ENREGISTREMENT AUTOMATIQUE PENDANT LA CONFIGURATION QUI SUIT :
         "remotePath": "/iut/users/nomDeFamille/public_html/",
         "ignore": [
             ".vscode",
-    				".DS_Store"
+    		".DS_Store"
         ]
     }
+```
 
-Remarque : Rajoutez .DS_Store seulement si vous êtes sous MacOS, c'est un fichier uniquement présent sur ce système d'exploitation (est un fichier caché), il ne sert à rien de le mettre sur le serveur, nous pouvons donc l'ignorer.
+> **Remarque** : Rajoutez .DS_Store seulement si vous êtes sous MacOS, c'est un fichier uniquement présent sur ce système d'exploitation (est un fichier caché), il ne sert à rien de le mettre sur le serveur, nous pouvons donc l'ignorer.
 
 - Maintenant il faut dire à l'extension : Dès que je sauvegarde, remplace le fichier sur le serveur !
 
+```json
     {
         "protocol": "sftp",
         "host": "tp.iha.unistra.fr",
@@ -273,15 +276,16 @@ Remarque : Rajoutez .DS_Store seulement si vous êtes sous MacOS, c'est un fichi
         "remotePath": "/iut/users/nomDeFamille/public_html/",
         "ignore": [
             ".vscode",
-    				".DS_Store"
+    		".DS_Store"
         ],
-    		"uploadOnSave": true
+    	"uploadOnSave": true
     }
+```
 
-- Si maintenant vous effectuez des modifications sur un fichier et que vous l'enregistrez, si l'extension fonctionne il devrait vous afficher "done nomDuFichier.php"
+- Si maintenant vous effectuez des modifications sur un fichier et que vous l'enregistrez, si l'extension fonctionne il devrait vous afficher "done nomDuFichier.ext"
 
 ![](Untitled-f988cf02-29de-46c6-9b69-207efbf9ee6a.png)
 
-VOUS POUVEZ REACTIVER L'ENREGISTREMENT AUTOMATIQUE
+**VOUS POUVEZ REACTIVER L'ENREGISTREMENT AUTOMATIQUE**
 
-## RAPPEL : l'adresse pour accéder à vos fichiers .php est : [https://tp.iha.unistra.fr/~NOMDEFAMILLE/](https://tp.iha.unistra.fr/~moselle/)
+RAPPEL : l'adresse pour accéder à votre serveur est : [https://tp.iha.unistra.fr/~NOMDEFAMILLE/](https://tp.iha.unistra.fr/~nomdefamille/)
