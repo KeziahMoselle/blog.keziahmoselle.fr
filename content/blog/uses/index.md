@@ -95,7 +95,9 @@ These are the tools I use frequently.
 - My phone : OnePlus 6
 - Seat : DXRacer Formula F08 - White
 - NAS : Synology NAS DS218 (RAID1)
-- My backpack : XD Design Bobby XL 17", black
+- My backpacks :
+  - GitHub Education Campus Backpack
+  - XD Design Bobby XL 17", black
 
 ## My desk
 
