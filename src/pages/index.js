@@ -11,6 +11,8 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    console.log(data)
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -31,6 +33,7 @@ class BlogIndex extends React.Component {
                 date={node.frontmatter.date}
                 slug={node.fields.slug}
                 timeToRead={node.timeToRead}
+                wordCount={node.wordCount.words}
                 key={node.fields.slug}
               />
             )
@@ -50,17 +53,20 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
-          excerpt(pruneLength: 200)
+          excerpt(pruneLength: 280)
           timeToRead
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "DD/MM/YYYY")
+            date(fromNow: true, locale: "FR")
             title
+          }
+          wordCount {
+            words
           }
         }
       }

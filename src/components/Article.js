@@ -1,35 +1,41 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-function ArticleLink ({ title, slug, excerpt, thumbnail, topics, date, timeToRead}) {
-  if (topics) {
-    var listTopics = topics.map(tag => (
-      <h5 className="chip">{ tag }</h5>
-    ))
-  }
-  
+function ArticleLink ({ title, slug, excerpt, date, timeToRead, wordCount}) {
   return (
     <Link to={slug}>
       <div className="article card">
         <div className="article-header">
-          <div>
+          <div className="article-title">
             <h3>{ title }</h3>
-            <p className="grey">{ excerpt }</p>
-            <div>{ listTopics }</div>
+            <small className="grey show-on-desktop">publié { date }</small>
           </div>
-          
-          { thumbnail &&
-            <img
-              src={`./assets/thumbnails/${thumbnail}.jpg`}
-              alt={`${title} thumbnail`}
-            />
-          }
+          <p className="grey">{ excerpt }</p>
         </div>
         
         <div className="article-footer">
-          <p className="pill"><span>Lire l'article</span></p>
-          <span className="chip white bordered">~{ timeToRead } min de lecture</span>
+          <p className="pill">
+            <span>Lire l'article</span>
+          </p>
+
+          <div>
+            <div className="show-on-tablet-and-down">
+              <small className="chip grey white show-on-tablet-and-down">
+                publié { date }
+              </small>
+
+              <span className="chip grey white bordered">
+                { wordCount } mots
+              </span>
+            </div>
+
+            <span className="chip grey white bordered show-on-desktop">
+              ~{ timeToRead } min de lecture
+            </span>
+          </div>
         </div>
+
+
       </div>
     </Link>
   )
