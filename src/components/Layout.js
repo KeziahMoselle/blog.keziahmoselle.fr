@@ -17,7 +17,7 @@ function Layout ({ location, children, classToApply }) {
     <div id="root">
       {header}
 
-      <main className={`container medium ${classToApply}`}>
+      <main className={`articles container medium ${classToApply}`}>
         {children}
       </main>
 

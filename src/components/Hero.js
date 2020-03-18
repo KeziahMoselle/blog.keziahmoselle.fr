@@ -16,6 +16,13 @@ function Hero () {
     angle: 50
     
   })
+
+  function updateGradient (event) {
+    const x = event.pageX - event.target.offsetLeft - event.target.offsetParent.offsetLeft
+    const y = event.pageY - event.target.offsetTop - event.target.offsetParent.offsetTop
+    event.target.style.setProperty('--x', x + 'px')
+    event.target.style.setProperty('--y', y + 'px')
+  }
   
   return (
     <animated.div style={{opacity}} className="container hero">
@@ -29,14 +36,18 @@ function Hero () {
 
       <p>A place to share my thoughts.</p>
 
-      <div>
-        <div className="circle"></div>
-        <animated.div style={{
+      <animated.div
+        style={{
           backgroundColor: color,
+          right: 0,
           transform: x.interpolate(x => `translateX(${x}px)`)
-        }} className="circle"></animated.div>
-      </div>
+        }}
+        className="circle animated"
+        onMouseMove={updateGradient}
+      >
+      </animated.div>
       <animated.div style={{
+        right: 0,
         transform: angle.interpolate(angle => `skewX(-${angle}deg)`)
       }} className="circle overlap"></animated.div>
     </animated.div>

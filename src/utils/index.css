@@ -69,6 +69,17 @@ html, body {
   align-items: stretch;
 }
 
+:root {
+  --accent: #d23669;
+  --success: #20e289;
+  --error: #FF5F56;
+}
+
+a:focus {
+  outline: none;
+  box-shadow: 0 0 0 .2rem var(--accent);
+}
+
 main {
   flex-grow: 1;
 }
@@ -221,11 +232,21 @@ h5 {
 
 .chip {
   display: inline-block;
-  background-color: #eeeeee;
+  background-color: #d8d8d8;
   padding: 4px 10px;
   margin-right: 6px;
   border-radius: 20px;
 }
+
+.chip.bordered {
+  border: 1px solid rgb(93, 93, 93);
+}
+
+.chip.white {
+  background-color: white;
+}
+
+
 
 /**
  *
@@ -302,7 +323,7 @@ header ul {
   margin-bottom: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(0,0,0,.12);
-  transition: box-shadow .1s;
+  transition: box-shadow .2s;
 }
 
 .card:hover {
@@ -355,6 +376,11 @@ header ul {
  *
  */
 
+ .articles .block > a {
+   margin-bottom: 64px;
+   border-radius: 8px;
+ }
+
  .table-of-contents p {
    margin: 0 !important;
  }
@@ -376,10 +402,15 @@ header ul {
 .article {
   cursor: pointer;
   width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: 0px 0px 0px 1px rgba(37, 37, 37, 0.12);
+}
+
+.article:hover {
+  box-shadow: 0 0 0 .2rem var(--accent);
 }
 
 .article-header {
@@ -434,7 +465,7 @@ header ul {
 .article h3 {
   font-size: 36px;
   font-weight: 900;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .article h4 {
@@ -442,6 +473,7 @@ header ul {
 }
 
 .article-footer {
+  margin-top: 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -542,6 +574,10 @@ header img {
   margin-left: 16px;
 }
 
+.header-menu li > a {
+  display: flex;
+}
+
 
 /**
  *
@@ -617,8 +653,46 @@ header img {
 
 /* CIRCLE */
 
-.hero .circle {
-  right: 0;
+.circle {
+  position: absolute;
+  top: 0;
+  height: 320px;
+  width: 320px;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .circle {
+    display: none;
+  }
+}
+
+.circle.animated {
+  overflow: hidden;
+}
+
+.circle.animated::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.1), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.circle.animated:hover::before {
+  --size: 640px;
+}
+
+.circle.overlap {
+  border: 10px solid rgba(0,0,0,.1);
+  border-top: none;
+  pointer-events: none;
 }
 
 
@@ -632,8 +706,6 @@ footer {
   width: 100%;
   background-color: black;
   padding: 16px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 footer .container {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRead}) {
+function ArticleLink ({ title, slug, excerpt, thumbnail, topics, date, timeToRead}) {
   if (topics) {
     var listTopics = topics.map(tag => (
       <h5 className="chip">{ tag }</h5>
@@ -14,8 +14,7 @@ function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRe
         <div className="article-header">
           <div>
             <h3>{ title }</h3>
-            <h4 className="grey">{ subtitle }</h4>
-            <p>Temps de lecture : ~{ timeToRead } min | { date }</p>
+            <p className="grey">{ excerpt }</p>
             <div>{ listTopics }</div>
           </div>
           
@@ -29,6 +28,7 @@ function ArticleLink ({ title, slug, subtitle, thumbnail, topics, date, timeToRe
         
         <div className="article-footer">
           <p className="pill"><span>Lire l'article</span></p>
+          <span className="chip white bordered">~{ timeToRead } min de lecture</span>
         </div>
       </div>
     </Link>
