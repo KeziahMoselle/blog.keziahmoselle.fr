@@ -1,5 +1,5 @@
 ---
-title: Uses
+title: Uses and my gear
 date: "2019-06-24T23:54:40.245Z"
 ---
 
