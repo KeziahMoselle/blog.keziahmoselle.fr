@@ -1,6 +1,6 @@
 ---
 title: Héberger des sites statiques avec Netlify
-date: "2019-02-22T23:54:40.245Z"
+date: "2019-02-22"
 ---
 
 Netlify est un service qui vous permet d'héberger des sites statiques gratuitement en vous proposant d'autres fonctionnalités. ([Functions](https://www.netlify.com/features/functions/), [Identity](https://www.netlify.com/docs/identity/), [Forms](https://www.netlify.com/docs/form-handling/))
