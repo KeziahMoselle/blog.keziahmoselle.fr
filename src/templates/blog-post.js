@@ -9,10 +9,6 @@ function BlogPostTemplate (props) {
   const { previous, next, slug } = props.pageContext
   const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
 
-  useEffect(() => {
-    document.querySelector('header').scrollIntoView()
-  }, [props.pageContext])
-
   return (
     <Layout location={props.location}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
