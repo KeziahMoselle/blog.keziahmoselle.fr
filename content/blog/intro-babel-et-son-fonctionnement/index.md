@@ -1,9 +1,9 @@
 ---
 title: Qu'est-ce que Babel et comment ça fonctionne ?
-date: "2020-03-18"
+date: "2020-03-19"
 ---
 
-![Babel cover](./images/babel-wordmark.svg)
+![](./images/babel-wordmark.svg)
 
 # Qu'est-ce que Babel ?
 
@@ -184,7 +184,7 @@ Imaginons que nous ayons une fonction qui nous renverrai un tableau comme suit :
 [x, y] = calculateCoordinates()
 ```
 
-Nous destructurons le premier et le deuxième index du résultat de la fonction `calculateCoordinates`
+Nous déstructurons le premier et le deuxième index du résultat de la fonction `calculateCoordinates`
 
 Une sortie simple serait :
 ```js
