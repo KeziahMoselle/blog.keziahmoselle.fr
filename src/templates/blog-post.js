@@ -7,6 +7,7 @@ import SEO from '../components/Seo'
 function BlogPostTemplate (props) {
   const post = props.data.markdownRemark
   const { previous, next, slug } = props.pageContext
+  
   const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
 
   useEffect(() => {
@@ -15,7 +16,11 @@ function BlogPostTemplate (props) {
 
   return (
     <Layout location={props.location}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        cover={`/cover/${props['*']}.jpg`}
+      />
 
       <div style={{ marginTop: '64px' }}>
         <div className="article-metadata space-between">
@@ -65,6 +70,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       timeToRead
       tableOfContents
       frontmatter {
