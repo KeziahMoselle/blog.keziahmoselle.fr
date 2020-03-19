@@ -224,6 +224,8 @@ doSomething((
 ))
 ```
 
+> Les résultats ci-dessus ne sont pas de réels sorties de Babel, mais permettent d'illustrer le problème.
+
 
 La transformation peut être résumé de cette manière :
 - Entrée : AST

@@ -9,6 +9,10 @@ function BlogPostTemplate (props) {
   const { previous, next, slug } = props.pageContext
   const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
 
+  useEffect(() => {
+    document.querySelector('header').scrollIntoView()
+  }, [props.pageContext])
+
   return (
     <Layout location={props.location}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -18,7 +22,7 @@ function BlogPostTemplate (props) {
           <Link to="/"><button>Go back</button></Link>
           <p>
             <span style={{ marginBottom: '6px' }}>Temps de lecture : ~{ post.timeToRead } min</span>
-            <span>{ post.frontmatter.date }</span>
+            <span>Publié le { post.frontmatter.date }</span>
           </p>
         </div>
 
@@ -59,21 +63,13 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       html
-      excerpt
       timeToRead
       tableOfContents
       frontmatter {
         title
-        date(formatString: "DD/MM/YYYY")
+        date(formatString: "DD MMMM YYYY", locale: "FR")
       }
     }
   }
