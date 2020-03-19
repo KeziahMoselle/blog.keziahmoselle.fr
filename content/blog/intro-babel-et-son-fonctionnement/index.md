@@ -66,6 +66,8 @@ Nous allons maintenant rajouter un script à notre `package.json` pour faciliter
 }
 ```
 
+Les commandes sont accessibles via `npm run build` ou `npm run watch`.
+
 la commande de `build` se construit ainsi : `babel <source-folder> -d <destination-folder>`, changez les noms de dossiers en fonction de votre structure !
 Babel prendra donc votre dossier source et transpilera tous les fichiers .js dans le dossier de destination, il faudra donc importer les fichiers de destination dans votre build final !
 
