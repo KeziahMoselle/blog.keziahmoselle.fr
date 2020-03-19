@@ -1,6 +1,6 @@
 ---
 title: Uses and my gear
-date: "2019-06-24T23:54:40.245Z"
+date: "2019-06-24"
 ---
 
 > This page was inspired by the works of [Wes Bos](https://wesbos.com/uses/) and [Ali Spittel](https://zen-of-programming.com/uses/).
