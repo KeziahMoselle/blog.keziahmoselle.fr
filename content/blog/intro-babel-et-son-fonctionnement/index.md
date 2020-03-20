@@ -71,7 +71,7 @@ Les commandes sont accessibles via `npm run build` ou `npm run watch`.
 la commande de `build` se construit ainsi : `babel <source-folder> -d <destination-folder>`, changez les noms de dossiers en fonction de votre structure !
 Babel prendra donc votre dossier source et transpilera tous les fichiers .js dans le dossier de destination, il faudra donc importer les fichiers de destination dans votre build final !
 
-Nous pouvons également rajouter un script `watch` qui va s'occuper d'observer les changements à nos fichier sources puis les transpilera automatiquement à chaque changement, en plus de cela nous pouvons rajouter le support des source maps qui nous aidera à mapper la ligne original dans le fichier source.
+Nous pouvons également rajouter un script `watch` qui va s'occuper d'observer les changements à nos fichiers sources puis les transpilera automatiquement à chaque changement, en plus de cela nous pouvons rajouter le support des sources maps qui nous aidera à mapper la ligne original dans le fichier source.
 
 Une fois l'installation faite, nous devons configurer Babel sans quoi il ne fera aucune modification vu que nous lui avions rien demandé de faire pour le moment.
 
@@ -168,7 +168,7 @@ Le parser va lire votre code source et donner en sortie un **Abstract Syntax Tre
 
 un AST est une représentation de votre code sous forme d'arbre représentant pour chaque noeud une partie de votre programme et est utilisé par un autre programme dans le but de réaliser une autre tâche.
 
-![Abstract Syntax Tree example](./images/ast.svg)
+![Abstract Syntax Tree exemple](./images/ast.svg)
 
 > Vous pouvez voir à quoi ressemble un AST en détails sur ce site en y collant votre code : [astexplorer.net](https://astexplorer.net/)
 
@@ -195,7 +195,7 @@ x = _ref[0]
 y = _ref[1]
 ```
 
-Ce qui devrait fonctionner, maintenant imaginons que nous faisions la même chose mais au sein d'une fonction comme ceci :
+Ce qui devrait fonctionner, maintenant imaginons que nous fassions la même chose mais au sein d'une fonction comme ceci :
 
 ```js
 doSomething([x, y] = calculateCoordinates())
@@ -233,7 +233,7 @@ La transformation peut être résumé de cette manière :
 - Entrée : AST
 - Sortie : AST' (modifié)
 
-Un example de modification que l'on peut réaliser durant cette étape :
+Un exemple de modification que l'on peut réaliser durant cette étape :
 
 ```js
 // Turn this
