@@ -11,8 +11,18 @@ function BlogPostTemplate (props) {
   const editFileUrl = `https://github.com/keziahmoselle/blog.keziahmoselle.fr/edit/master/content/blog/${slug.replace(/\//g,'')}/index.md`
 
   useEffect(() => {
-    document.querySelector('header').scrollIntoView()
+    scrollToAnchor()
   }, [props.pageContext])
+
+  function scrollToAnchor() {
+    const hash = decodeURIComponent(document.location.hash)
+
+    if (hash) {
+      return document.querySelector(hash).scrollIntoView()
+    }
+
+    document.querySelector('header').scrollIntoView()
+  }
 
   return (
     <Layout location={props.location}>
