@@ -3,7 +3,7 @@ const matter = require('gray-matter');
 const path = require('path')
 
 const BLOG_PATH = path.join('content', 'blog')
-const STATIC_API_PATH = path.join('api', 'lastPost.json')
+const STATIC_API_PATH = path.join('public', 'api', 'lastPost.json')
 
 async function readFolders () {
   const folders = await fs.readdir(BLOG_PATH)

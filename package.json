@@ -4,7 +4,7 @@
   "description": "A place to share my thoughts.",
   "version": "1.0.0",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && node generateStaticApi.js",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
