@@ -3,7 +3,7 @@ const matter = require('gray-matter');
 const path = require('path')
 
 const BLOG_PATH = path.join('content', 'blog')
-const STATIC_API_PATH = path.join('public', 'api', 'lastPost.json')
+const STATIC_API_PATH = path.join('public', 'api')
 
 async function readFolders () {
   try {
@@ -30,8 +30,12 @@ async function readFolders () {
       }
     }
 
-    await fs.writeFile(STATIC_API_PATH, JSON.stringify(lastPost, null, 2))
-    console.log(`Successfully written to ${STATIC_API_PATH}`)
+    await fs.mkdir(STATIC_API_PATH)
+    await fs.writeFile(
+      path.join(STATIC_API_PATH, 'lastPost.json'),
+      JSON.stringify(lastPost, null, 2)
+    )
+    console.log(`Static JSON API successfully written.`)
   } catch (error) {
     console.error(error)
   }
